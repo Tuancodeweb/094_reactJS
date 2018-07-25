@@ -210,14 +210,18 @@ componentWillMount() {
                   editUserStatus={this.state.editUserStatus} 
                   UserEditObject={this.state.UserEditObject}  
                   changeEditUserStatus={() => {this.changeEditUserStatus()}}/>
-
                 </div>
 
                 <div className="col-12">
                   <hr/>
                 </div>
 
-                <TableData ClickButtonDelete={(idUser) => {this.ClickButtonDelete(idUser)}} TEST={(user) => this.EditFuction(user)} dataUserprop={ketqua} changeEditUserStatus={() => {this.changeEditUserStatus()}}/>
+                <TableData 
+                ClickButtonDelete={(idUser) => {this.ClickButtonDelete(idUser)}}
+                 TEST={(user) => this.EditFuction(user)} 
+                 dataUserprop={ketqua} 
+                 changeEditUserStatus={() => {this.changeEditUserStatus()}}
+                 />
                 
                 <AddUser add={(name,tel,permission) => this.Getnewuserdata(name,tel,permission)}/>
             </div>

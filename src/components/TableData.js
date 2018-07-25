@@ -9,7 +9,16 @@ class TableData extends Component {
 
 
   mappingdatauser = () => this.props.dataUserprop.map((value,key) =>(
-      <Tabledatarow ClickButtonDelete = {(idUser) => {this.ClickButtonDelete(idUser)}} TEST2={(user) => this.props.TEST(value)} id={value.id}  key={key} username={value.name} stt={key} tel={value.tel} per={value.permission} changeEditUserStatus={() => {this.props.changeEditUserStatus()}} />
+      <Tabledatarow 
+      ClickButtonDelete = {(idUser) => {this.ClickButtonDelete(idUser)}} 
+      TEST2={(user) => this.props.TEST(value)}
+       id={value.id}  
+       key={key} 
+       username={value.name} 
+       stt={key} 
+       tel={value.tel} 
+       per={value.permission} 
+       changeEditUserStatus={() => {this.props.changeEditUserStatus()}} />
 ))
   
 
